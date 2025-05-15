@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Seouda",
+    "slug": "seoudaapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "seoudaapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.elevator.seouda",
+      "buildNumber": "3",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Cette application nécessite l'accès à la caméra pour scanner les codes QR.",
+        "NSPhotoLibraryUsageDescription": "Cette application nécessite l'accès à vos photos pour sauvegarder les images.",
+        "NSLocationWhenInUseUsageDescription": "Cette application nécessite l'accès à votre localisation pour la livraison."
+      }
+    },
+    "android": {
+      "package": "com.elevator.seouda",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ea9f5f64-373c-4758-ad56-2debc41e6b46"
+      }
+    }
+  }
+}
